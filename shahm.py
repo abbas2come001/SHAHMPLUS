@@ -230,7 +230,7 @@ bot_usernameeee = '@xnsex21bot'
 
 
 
-
+DEVLOO = DEVS
 
 
 ownerhson_id = (int(DEVLOO))
