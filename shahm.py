@@ -97,6 +97,10 @@ async def ms (event):
 • بوت تمويل الجوكر - `.تجميع الجوكر`
 • بوت تمويل العقـاب - `.تجميع العقاب`
 • بوت تمويل العـرب  - `.تجميع العرب 
+• بوت تمويل برليون  - `.تجميع برليون`
+• بوت تمويل اسيا - `.تجميع اسيا`
+• بوت تمويل هايبر - `.تجميع هايبر`
+• بوت تمويل السلطان  - `.تجميع السلطان` 
 • فحص السورس      - `.فحص`**""")
 @abbas.on(events.NewMessage(outgoing=False , pattern='.التجميع'))
 async def onerstart(event):
@@ -128,7 +132,7 @@ async def onerstart(event):
 ملاحظة : ننصحك بوضع عدد الثواني 3600
 ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
 `.انضمام` : الانضمام الى قنوات البوتات المذكورة
-`.تحويل النقاط` : الدخول لقائمة تحويل نقاط
+`.التحويل` : الدخول لقائمة تحويل نقاط
 `.معلومات` : الدخول لقائمة تحويل معلومات
 `.مغادرة القنواة` : لمغادرة جميع القنوات والمجموعات
 `.الهدية +يوزر البوت`: لتجميع الهدية من البوت المرسل
@@ -791,7 +795,7 @@ async def arab(event):
         await abbas.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH\nعدد النقاط المجموعة: {chs}")
 #تحويل النقاط
 
-@abbas.on(events.NewMessage(outgoing=False, pattern='.تحويل'))
+@abbas.on(events.NewMessage(outgoing=False, pattern='.التحويل'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == onerabbas_id :
